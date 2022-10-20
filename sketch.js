@@ -163,12 +163,7 @@ function preload() {
 
   //// AFTER REACHING IN AXIOM////
 
-  // LEVEL - 3 //
-  astImg = loadImage("ast.png"); 
-  boostImg = loadImage("assets/booster.png");// IMAGE OF THE BOOSTER // 
-  coin_collect = loadSound("assets/Coin_collect.mp3");// COLLECTING COINS //
-  success = loadSound("assets/Success.mp3");// FOR VICTORY //
-   // LEVEL - 3 //
+  
 
    crashImg = loadImage("crash.jpg");
 
@@ -282,13 +277,6 @@ function setup(){
   r.addImage("r2",rocketImg);
   r.scale = 3;
 
-  //* CONTROLLING THE ROCKET IN LEVEL - 2; CAMERA VIEW - 2*//
- // s = createSprite(450,300,20,20);//
- // s.addImage("sp_1",spaceImg);//
- // s.scale = 2.9;//
-  //s.visible = false;//
-  //* CONTROLLING THE ROCKET IN LEVEL - 2; CAMERA VIEW - 2*//
-
   s1 = createSprite(random(100,200),-90,10,10);
   s1.addImage("sa_1",s1Img);
   s1.scale = 0.6;
@@ -315,14 +303,6 @@ function setup(){
   ship.setCollider("rectangle",20,20,300,300)
   //ship.visible = false;
 
- 
-
-  //* CONTROLLING THE ROCKET IN LEVEL - 2; CAMERA VIEW - 2*//
- // rc = createSprite(480,350,100,100);//
- // rc.addImage("rc_back",rc_Img);//
- // rc.visible = false;//
- // rc.setCollider("rectangle",20,0,200,200)//
-  //* CONTROLLING THE ROCKET IN LEVEL - 2; CAMERA VIEW - 2*//
 
   rocket = createSprite(460,380,20,20); 
   rocket.addImage("r1",rocketImg);
@@ -332,14 +312,10 @@ function setup(){
 
   atmos = createSprite(550,-200,1310,40);
   atmos.shapeColor = rgb(167, 234, 237);
- // atmos.velocityY = 3;
-//LEVEL 2//
 
  //IN THE PLAY STATE//
 
  //// AFTER REACHING IN AXIOM////
-
-// axi = createSprite(500,375,20,20);
  axi = createSprite(780,375,20,20);
  axi.addAnimation("a_1", ax1Img);
  axi.addAnimation("a_2", ax2Img);
@@ -357,7 +333,6 @@ function setup(){
 //// AFTER REACHING IN AXIOM////
 
 // LEVEL - 3//
- //p = createSprite(500,370,20,20);
  p = createSprite(780,380,20,20);
  p.addAnimation("p_1", p1Img);
  p.addAnimation("p_2", p2Img);
@@ -370,7 +345,6 @@ function setup(){
  p.addAnimation("p_9", p9Img);
  p.addAnimation("p_10", p10Img);
  p.addAnimation("p_11", p11Img);
- //p.scale = 1.2;
  p.scale = 1.5;
  p.visible = false;
  
